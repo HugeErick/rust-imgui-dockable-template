@@ -1,0 +1,11 @@
+[package]
+name = "self_test_imgui_rust"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+copypasta = "0.10.2"
+glium = "0.34.0"
+imgui = { version = "0.12.0", features = ["docking"] }
+imgui-glium-renderer = "0.12.0"
+imgui-winit-support = "0.12.0"

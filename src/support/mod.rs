@@ -76,6 +76,7 @@ pub fn init(title: &str) -> System {
     }
 }
 
+#[allow(dead_code)]
 impl System {
     pub fn main_loop<F: FnMut(&mut bool, &mut Ui) + 'static>(self, mut run_ui: F) {
         let System {

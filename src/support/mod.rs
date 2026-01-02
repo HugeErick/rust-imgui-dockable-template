@@ -25,6 +25,7 @@ pub struct System {
     pub font_size: f32,
 }
 
+#[allow(dead_code)]
 pub fn init(title: &str) -> System {
     let title = match Path::new(&title).file_name() {
         Some(file_name) => file_name.to_str().unwrap(),

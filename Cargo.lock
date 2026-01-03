@@ -3,6 +3,18 @@
 version = 4
 
 [[package]]
+name = "DiskScrutiny"
+version = "0.1.0"
+dependencies = [
+ "copypasta",
+ "glium",
+ "imgui",
+ "imgui-glium-renderer",
+ "imgui-winit-support",
+ "walkdir",
+]
+
+[[package]]
 name = "ab_glyph"
 version = "0.2.32"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1195,17 +1207,6 @@ dependencies = [
  "memmap2",
  "smithay-client-toolkit 0.18.1",
  "tiny-skia",
-]
-
-[[package]]
-name = "self_test_imgui_rust"
-version = "0.1.0"
-dependencies = [
- "copypasta",
- "glium",
- "imgui",
- "imgui-glium-renderer",
- "imgui-winit-support",
 ]
 
 [[package]]

@@ -1,16 +1,13 @@
 mod support;
+mod main_instance;
+mod utils;
+
+use crate::utils::os_identity::identification;
+use crate::main_instance::initialice_main_ui;
 
 fn main() {
-    let system = support::init(file!());
-    system.main_loop(move |_, ui| {
-        ui.dockspace_over_main_viewport();
-        ui.window("Hello world")
-            .size([300.0, 100.0], imgui::Condition::FirstUseEver)
-            .build(|| {
-                ui.text("Hello world!");
-                ui.separator();
-                let mouse_pos = ui.io().mouse_pos;
-                ui.text(format!("Mouse Position: ({:.1},{:.1})", mouse_pos[0], mouse_pos[1]));
-            });
-    });
+  let os = identification(); 
+  println!("{:?}", os);
+  initialice_main_ui();
 }
+

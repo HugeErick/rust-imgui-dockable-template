@@ -6,6 +6,7 @@ edition = "2024"
 [dependencies]
 copypasta = "0.10.2"
 glium = { version = "0.34.0", default-features = true }
-imgui = { path = "imgui", features = ["docking"] }
-imgui-glium-renderer = { path = "imgui-glium-renderer"}
-imgui-winit-support = { path = "imgui-winit-support" }
+imgui = { path = "imgui_backend/imgui", features = ["docking"] }
+imgui-glium-renderer = { path = "imgui_backend/imgui-glium-renderer"}
+imgui-winit-support = { path = "imgui_backend/imgui-winit-support" }
+rfd = "0.17.2"
